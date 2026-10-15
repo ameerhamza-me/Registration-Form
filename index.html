@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <form id="myForm" novalidate>
+
+        <h2>Registration Form</h2>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </td>
+                    <td><span id="nameError"></span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </td>
+                    <td><span id="emailError"></span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td>
+                        <input type="password" id="password" placeholder="Enter password">
+                    </td>
+                    <td><span id="passwordError"></span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td>
+                        <input type="number" id="age" placeholder="Enter your age">
+                    </td>
+                    <td><span id="ageError"></span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td>
+                        <input type="tel" id="phone" placeholder="Enter phone number">
+                    </td>
+                    <td><span id="phoneError"></span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td>
+                        <input type="text" id="address" placeholder="Enter your address">
+                    </td>
+                    <td><span id="addressError"></span></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </form>
+
+    <script src="form.js"></script>
+
+</body>
+</html>

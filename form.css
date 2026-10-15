@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eef2ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+#myForm {
+    width: 100%;
+    max-width: 750px;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 28px;
+    font-size: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+td:first-child {
+    width: 100px;
+    padding-top: 17px;
+}
+
+td:nth-child(2) {
+    width: 65%;
+}
+
+td:last-child {
+    width: 180px;
+}
+
+label {
+    color: #334155;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    color: #1e293b;
+    background-color: #f8fafc;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    background-color: #ffffff;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+span {
+    display: block;
+    color: #dc2626;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-top: 12px;
+    overflow-wrap: anywhere;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    #myForm {
+        padding: 22px 15px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    table,
+    tbody,
+    tr,
+    td {
+        display: block;
+        width: 100% !important;
+    }
+
+    table {
+        border-spacing: 0;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        padding: 3px 0;
+    }
+
+    td:first-child {
+        padding-top: 0;
+    }
+
+    td:last-child {
+        padding-bottom: 0;
+    }
+
+    span {
+        padding-top: 4px;
+        min-height: 4px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}
